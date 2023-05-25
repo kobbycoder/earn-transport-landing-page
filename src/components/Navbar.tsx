@@ -22,11 +22,11 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8 bg-main sm:bg-white">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 pl-8 sm:pl-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-emerald-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white sm:text-gray-800 hover:bg-emerald-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -93,23 +93,23 @@ export default function Navbar() {
                   transition={{
                     duration: 0.5,
                   }}
-                  className="md:mt-2 space-x-4"
+                  className="md:mt-2 space-x-4 flex items-center"
                 >
                   <a
                     href="/contact"
-                    className="py-2 p-4 rounded-3xl text-gray-800 text-xs"
+                    className="py-2  rounded-3xl text-white sm:text-gray-800 text-xs"
                   >
                     EN
                   </a>
                   <a
                     href="/contact"
-                    className="border border-gray-800 py-2 p-4 rounded-3xl text-gray-800 text-xs shadow-lg hover:bg-white"
+                    className="border sm:border-gray-800 py-2 p-4 rounded-3xl text-white sm:text-gray-800 text-xs shadow-lg hover:bg-white"
                   >
                     Login
                   </a>
                   <a
                     href="/contact"
-                    className="py-2 p-4 rounded-3xl text-gray-800 text-xs"
+                    className="py-2 rounded-3xl text-white sm:text-gray-800 text-xs"
                   >
                     Sign up
                   </a>
@@ -119,7 +119,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2 bg-main sm:bg-white">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -127,8 +127,8 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     activeSegment === item.targetSegment
-                      ? "text-gray-800"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      ? "text-white"
+                      : "text-white hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-xs text-gray-700"
                   )}
                 >

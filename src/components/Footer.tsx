@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-white py-12 text-gray-800">
-      <div className="flex justify-between w-full max-w-5xl mx-auto">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full max-w-5xl mx-auto">
         <div className="flex flex-col items-center space-y-12">
           <div>
             <Image
@@ -44,14 +44,14 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col justify-center md:justify-normal text-center mt-8 md:mt-0">
           <h1 className="font-bold text-sm">Earn Transport</h1>
           <div className="flex flex-col text-xs space-y-6 mt-5">
             <a href="">Rides</a>
             <a href="">E-Commerce</a>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col justify-center md:justify-normal text-center mt-8 md:mt-0">
           <h1 className="font-bold text-sm">Partner with Earn Transport</h1>
           <div className="flex flex-col text-xs space-y-6 mt-5">
             <a href="">Sign up as a driver</a>
@@ -60,7 +60,7 @@ export default function Footer() {
             <a href="">Influencer</a>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col justify-center md:justify-normal text-center mt-8 md:mt-0">
           <h1 className="font-bold text-sm">Company</h1>
           <div className="flex flex-col text-xs space-y-6 mt-5">
             <a href="">About us</a>
