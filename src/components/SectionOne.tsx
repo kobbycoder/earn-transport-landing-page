@@ -13,7 +13,7 @@ export default function SectionOne() {
               width={1000}
               height={500}
               alt="plus"
-              className="h-full w-full object-none object-top"
+              className="h-full w-full md:object-none object-top object-cover md:object-contain"
               priority={true}
             />
           </div>
