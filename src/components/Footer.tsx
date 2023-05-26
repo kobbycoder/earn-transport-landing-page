@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-white py-12 text-gray-800">
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full max-w-5xl mx-auto">
-        <div className="flex flex-col items-center space-y-12">
+        <div className="flex flex-col lg:items-start items-center space-y-12">
           <div>
             <Image
               src="/images/logo_blue.png"
@@ -73,68 +73,58 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full max-w-5xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between mt-12">
-          <div className="flex space-x-3 justify-center md:justify-normal">
-            <div className="bg-gray-100 p-1 rounded-full">
-              <a href="">
-                <Image
-                  src="/images/facebook.png"
-                  width={1000}
-                  height={50}
-                  alt="plus"
-                  className="block h-6 w-6"
-                  priority={true}
-                />
-              </a>
-            </div>
-            <div className="bg-gray-100 p-1 rounded-full">
-              <a href="">
-                <Image
-                  src="/images/instagram.png"
-                  width={1000}
-                  height={50}
-                  alt="plus"
-                  className="block h-6 w-6"
-                  priority={true}
-                />
-              </a>
-            </div>
-            <div className="bg-gray-100 p-1 rounded-full">
-              <a href="">
-                <Image
-                  src="/images/twitter.png"
-                  width={1000}
-                  height={50}
-                  alt="plus"
-                  className="block h-6 w-6"
-                  priority={true}
-                />
-              </a>
-            </div>
-            <div className="bg-gray-100 p-1 rounded-full items-center flex justify-center">
-              <a href="">
-                <Image
-                  src="/images/linkedin.png"
-                  width={1000}
-                  height={50}
-                  alt="plus"
-                  className="block h-5 w-5"
-                  priority={true}
-                />
-              </a>
-            </div>
-            <div className="bg-gray-100 p-1 rounded-full">
-              <a href="">
-                <Image
-                  src="/images/tiktok.png"
-                  width={1000}
-                  height={50}
-                  alt="plus"
-                  className="block h-6 w-6"
-                  priority={true}
-                />
-              </a>
-            </div>
+        <div className="flex flex-col md:flex-row justify-between mt-12 px-8 lg:px-0">
+          <div className="space-x-3 hidden md:flex justify-center md:justify-normal">
+            <a href="">
+              <Image
+                src="/images/facebook.png"
+                width={1000}
+                height={50}
+                alt="plus"
+                className="block h-4 w-4"
+                priority={true}
+              />
+            </a>
+            <a href="">
+              <Image
+                src="/images/instagram.png"
+                width={1000}
+                height={50}
+                alt="plus"
+                className="block h-4 w-4"
+                priority={true}
+              />
+            </a>
+            <a href="">
+              <Image
+                src="/images/twitter.png"
+                width={1000}
+                height={50}
+                alt="plus"
+                className="block h-4 w-4"
+                priority={true}
+              />
+            </a>
+            <a href="">
+              <Image
+                src="/images/linkedin.png"
+                width={1000}
+                height={50}
+                alt="plus"
+                className="block h-4 w-4"
+                priority={true}
+              />
+            </a>
+            <a href="">
+              <Image
+                src="/images/tiktok.png"
+                width={1000}
+                height={50}
+                alt="plus"
+                className="block h-4 w-4"
+                priority={true}
+              />
+            </a>
           </div>
           <div className="text-xs space-x-4 hidden md:flex">
             <div className="py-2 px-5 bg-gray-100 rounded-3xl">
@@ -148,20 +138,105 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="md:w-full md:h-1 h-1 w-full mx-auto my-2 bg-gray-200 border-0 rounded md:my-5" />
-        <div>
-          <div className="bg-black p-5">
-            <a href="">
-              
-            </a>
-          </div>
-          <div>
-            <a href="">
-
-            </a>
+        <div className="md:hidden flex flex-col justify-center mt-5 px-5 space-y-5 mb-5">
+          <h1 className="text-gray-300 text-xs">Request a ride</h1>
+          <div className="flex space-x-5 w-full">
+            <div className="bg-black p-3 w-1/2 rounded-xl flex items-center">
+              <a href="">
+                <div className="w-full flex justify-center items-center space-x-2">
+                  <div>
+                    <Image
+                      src="/images/appstore.png"
+                      width={1000}
+                      height={50}
+                      alt="plus"
+                      className="block h-12 w-12"
+                      priority={true}
+                    />
+                  </div>
+                  <div className="flex flex-col text-white">
+                    <p className="text-xs">GET ON</p>
+                    <h1 className="text-xs">App Store</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="bg-black p-3 w-1/2 rounded-xl flex items-center">
+              <a href="">
+                <div className="w-full flex justify-center items-center space-x-4">
+                  <div>
+                    <Image
+                      src="/images/playstore.png"
+                      width={1000}
+                      height={50}
+                      alt="plus"
+                      className="block h-auto w-auto"
+                      priority={true}
+                    />
+                  </div>
+                  <div className="flex flex-col text-white">
+                    <p className="text-xs">GET IT ON</p>
+                    <h1 className="text-xs">Google Play</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between">
+        <hr className="md:w-full md:h-1 h-1 w-5/6 mx-auto my-2 bg-gray-200 border-0 rounded md:my-5" />
+        <div className="space-x-3 flex md:hidden justify-center md:justify-norma my-8">
+          <a href="">
+            <Image
+              src="/images/facebook.png"
+              width={1000}
+              height={50}
+              alt="plus"
+              className="block h-4 w-4"
+              priority={true}
+            />
+          </a>
+          <a href="">
+            <Image
+              src="/images/instagram.png"
+              width={1000}
+              height={50}
+              alt="plus"
+              className="block h-4 w-4"
+              priority={true}
+            />
+          </a>
+          <a href="">
+            <Image
+              src="/images/twitter.png"
+              width={1000}
+              height={50}
+              alt="plus"
+              className="block h-4 w-4"
+              priority={true}
+            />
+          </a>
+          <a href="">
+            <Image
+              src="/images/linkedin.png"
+              width={1000}
+              height={50}
+              alt="plus"
+              className="block h-4 w-4"
+              priority={true}
+            />
+          </a>
+          <a href="">
+            <Image
+              src="/images/tiktok.png"
+              width={1000}
+              height={50}
+              alt="plus"
+              className="block h-4 w-4"
+              priority={true}
+            />
+          </a>
+        </div>
+        <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between px-8 lg:px-0">
           <div className="text-xs text-center md:text-start">
             <p> © &nbsp; {dateYear} Earn Transport Technology v1.0.0</p>
           </div>
@@ -173,7 +248,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-center text-xs mt-10">
-          Made with ❤️ by {" "}
+          Made with ❤️ by{" "}
           <a
             href="https://kobbycoder.com/"
             target="_blank"
