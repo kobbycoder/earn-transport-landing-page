@@ -1,7 +1,9 @@
 import React from "react";
+import SectionOne from "./SectionOne";
 
 export default function Hero() {
   return (
+    <>
     <div className="flex w-full min-h-screen">
       <div className="w-full flex flex-col md:flex-row justify-between">
         <div className="md:w-1/2 h-1/2 md:h-full md:py-10 p-4 md:px-16 flex flex-col justify-center items-center md:items-start space-y-10 bg-main sm:bg-white">
@@ -26,5 +28,7 @@ export default function Hero() {
         <div className=" bg-hero-image bg-cover md:w-1/2 h-1/2 md:h-full"></div>
       </div>
     </div>
+    <SectionOne />
+    </>
   );
 }

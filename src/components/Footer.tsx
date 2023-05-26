@@ -44,14 +44,14 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col justify-center md:justify-normal text-center mt-8 md:mt-0">
+        <div className="flex flex-col justify-center md:justify-normal text-center md:text-start mt-8 md:mt-0">
           <h1 className="font-bold text-sm">Earn Transport</h1>
           <div className="flex flex-col text-xs space-y-6 mt-5">
             <a href="">Rides</a>
             <a href="">E-Commerce</a>
           </div>
         </div>
-        <div className="flex flex-col justify-center md:justify-normal text-center mt-8 md:mt-0">
+        <div className="flex flex-col justify-center md:justify-normal text-center md:text-start mt-8 md:mt-0">
           <h1 className="font-bold text-sm">Partner with Earn Transport</h1>
           <div className="flex flex-col text-xs space-y-6 mt-5">
             <a href="">Sign up as a driver</a>
@@ -60,7 +60,7 @@ export default function Footer() {
             <a href="">Influencer</a>
           </div>
         </div>
-        <div className="flex flex-col justify-center md:justify-normal text-center mt-8 md:mt-0">
+        <div className="flex flex-col justify-center md:justify-normal text-center md:text-start mt-8 md:mt-0">
           <h1 className="font-bold text-sm">Company</h1>
           <div className="flex flex-col text-xs space-y-6 mt-5">
             <a href="">About us</a>
@@ -74,7 +74,7 @@ export default function Footer() {
       </div>
       <div className="w-full max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between mt-12 px-8 lg:px-0">
-          <div className="space-x-3 hidden md:flex justify-center md:justify-normal">
+          <div className="space-x-3 hidden md:flex justify-center items-center md:justify-normal">
             <a href="">
               <Image
                 src="/images/facebook.png"
