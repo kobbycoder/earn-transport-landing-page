@@ -73,8 +73,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full max-w-5xl mx-auto">
-        <div className="flex justify-between mt-12">
-          <div className="flex space-x-3">
+        <div className="flex flex-col md:flex-row justify-between mt-12">
+          <div className="flex space-x-3 justify-center md:justify-normal">
             <div className="bg-gray-100 p-1 rounded-full">
               <a href="">
                 <Image
@@ -136,7 +136,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex text-xs space-x-4">
+          <div className="text-xs space-x-4 hidden md:flex">
             <div className="py-2 px-5 bg-gray-100 rounded-3xl">
               <a href="">Get the app</a>
             </div>
@@ -149,11 +149,23 @@ export default function Footer() {
           </div>
         </div>
         <hr className="md:w-full md:h-1 h-1 w-full mx-auto my-2 bg-gray-200 border-0 rounded md:my-5" />
-        <div className="flex justify-between">
-          <div className="text-xs">
+        <div>
+          <div className="bg-black p-5">
+            <a href="">
+              
+            </a>
+          </div>
+          <div>
+            <a href="">
+
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between">
+          <div className="text-xs text-center md:text-start">
             <p> © &nbsp; {dateYear} Earn Transport Technology v1.0.0</p>
           </div>
-          <div className="text-xs space-x-5">
+          <div className="text-xs space-x-5 text-center md:text-end">
             <a href="">Code of conduct</a>
             <a href="">Cookies</a>
             <a href="">Legal</a>
