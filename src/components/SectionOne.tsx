@@ -5,7 +5,7 @@ import { PlusIcon } from "@heroicons/react/24/outline";
 export default function SectionOne() {
   return (
     <div className="bg-gray-50 w-full min-h-screen">
-      <div className="w-full h-screen ">
+      <div className="w-full h-screen">
         <div className="flex flex-col-reverse md:flex-row w-full h-1/2">
           <div className="md:w-1/2 w-full h-full overflow-hidden">
             <Image
@@ -18,7 +18,7 @@ export default function SectionOne() {
             />
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center items-center md:items-start text-center md:space-y-5">
-          <div className="flex justify-center md:hidden sm:block">
+            <div className="flex justify-center md:hidden sm:block">
               <a
                 href=""
                 className="bg-main py-3 text-white rounded-3xl px-6 text-xs font-bold text-center mt-10"
