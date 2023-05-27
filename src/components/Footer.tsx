@@ -140,47 +140,43 @@ export default function Footer() {
         </div>
         <div className="md:hidden flex flex-col justify-center mt-5 px-5 space-y-5 mb-5">
           <h1 className="text-gray-300 text-xs">Request a ride</h1>
-          <div className="flex space-x-5 w-full">
-            <div className="bg-black p-3 w-1/2 rounded-xl flex items-center">
-              <a href="">
-                <div className="w-full flex justify-center items-center space-x-2">
-                  <div>
-                    <Image
-                      src="/images/appstore.png"
-                      width={1000}
-                      height={50}
-                      alt="plus"
-                      className="block h-12 w-12"
-                      priority={true}
-                    />
-                  </div>
-                  <div className="flex flex-col text-white">
-                    <p className="text-xs">GET ON</p>
-                    <h1 className="text-xs">App Store</h1>
-                  </div>
+          <div className="flex space-x-5 w-full justify-center">
+            <a href="" className="bg-black rounded-md py-2 px-4">
+              <div className="w-full flex justify-center items-center space-x-1">
+                <div>
+                  <Image
+                    src="/images/appstore.png"
+                    width={1000}
+                    height={50}
+                    alt="plus"
+                    className="block h-8 w-8"
+                    priority={true}
+                  />
                 </div>
-              </a>
-            </div>
-            <div className="bg-black p-3 w-1/2 rounded-xl flex items-center">
-              <a href="">
-                <div className="w-full flex justify-center items-center space-x-4">
-                  <div>
-                    <Image
-                      src="/images/playstore.png"
-                      width={1000}
-                      height={50}
-                      alt="plus"
-                      className="block h-auto w-auto"
-                      priority={true}
-                    />
-                  </div>
-                  <div className="flex flex-col text-white">
-                    <p className="text-xs">GET IT ON</p>
-                    <h1 className="text-xs">Google Play</h1>
-                  </div>
+                <div className="flex flex-col text-white">
+                  <p className="text-xs">GET ON</p>
+                  <h1 className="text-xs">App Store</h1>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+            <a href="" className="bg-black rounded-md py-2 px-4">
+              <div className="w-full flex justify-center items-center space-x-1">
+                <div>
+                  <Image
+                    src="/images/playstore.png"
+                    width={1000}
+                    height={50}
+                    alt="plus"
+                    className="block h-4 w-4"
+                    priority={true}
+                  />
+                </div>
+                <div className="flex flex-col text-white">
+                  <p className="text-xs">GET IT ON</p>
+                  <h1 className="text-xs">Google Play</h1>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <hr className="md:w-full md:h-1 h-1 w-5/6 mx-auto my-2 bg-gray-200 border-0 rounded md:my-5" />

@@ -11,7 +11,8 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-image": "url('/images/hero_img.png')",
-        "confetti": "url('/images/confetti.png')"
+        "confetti": "url('/images/confetti.png')",
+        "circle": "url('/images/circle.png')",
       },
       colors: {
         main: "#4686D6",
